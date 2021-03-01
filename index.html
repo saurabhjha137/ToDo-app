@@ -1,66 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TodoList</title>
-    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap"
-      rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css2?family=Lexend+Mega&display=swap"
-     rel="stylesheet"/>
-     <link href="https://fonts.googleapis.com/css2?family=Mukta&display=swap"
-     rel="stylesheet"/>
-     <link href="https://fonts.googleapis.com/css2?family=Jomhuria&display=swap"
-     rel="stylesheet"/>
-     <link href="https://fonts.googleapis.com/css2?family=Rajdhani&display=swap"
-     rel="stylesheet"/>
-     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
-     rel="stylesheet"/>
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
-      integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="./style.css" />
-  </head>
-  <body>
-      <div>
-            <ul class="nav-bar">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TodoList</title>
+  <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Lexend+Mega&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Mukta&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Jomhuria&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet" />
 
-            <li style="float:left"><a a class="active" href="#" onclick="changeFontTo0()">Actual Fonts/Change fonts  <i class="far fa-hand-point-right"></i></a></li> 
-            <li><a class="active" href="#" onclick="changeFontTo1()">Home</a></li>
-            <li><a class="active" href="#" onclick="changeFontTo2()">News</a></li>
-            <li><a class="active" href="#" onclick="changeFontTo3()">Contact</a></li>
-            <li><a class="active" href="#" onclick="changeFontTo4()">Action</a></li>
-            <li><a class="active" href="#" onclick="changeFontTo5()">About</a></li>
-            
-            </ul>
-      </div>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+    integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
 
-    <header>
-      <h1>Quintet  ToDo List</h1>
-    </header>
-    <form>
-      <input type="text" class="todo-input" />
-      <button class="todo-button" type="submit">
-        <i class="fas fa-plus-square"></i>
-      </button>
-      <div class="select">
-        <select name="todos" class="filter-todo">
-          <option value="all">All</option>
-          <option value="completed">Completed</option>
-          <option value="uncompleted">Uncompleted</option>
-        </select>
-      </div>
-    </form>
-    <div class="todo-container">
-      <ul class="todo-list"></ul>
+<body>
+  <div>
+    <ul class="nav-bar">
+
+      <li style="float:left"><a a class="active" href="#" onclick="changeFontTo0()">Actual Fonts/Change fonts <i
+            class="far fa-hand-point-right"></i></a></li>
+      <li><a class="active" href="#" onclick="changeFontTo1()">Lexend</a></li>
+      <li><a class="active" href="#" onclick="changeFontTo2()">Mukta</a></li>
+      <li><a class="active" href="#" onclick="changeFontTo3()">Jomhuria</a></li>
+      <li><a class="active" href="#" onclick="changeFontTo4()">Rajdhani</a></li>
+      <li><a class="active" href="#" onclick="changeFontTo5()">Lobster</a></li>
+
+    </ul>
+  </div>
+
+  <header>
+    <h1>Quintet ToDo List</h1>
+  </header>
+  <form>
+    <input type="text" class="todo-input" />
+    <button class="todo-button" type="submit">
+      <i class="fas fa-plus-square"></i>
+    </button>
+    <div class="select">
+      <select name="todos" class="filter-todo">
+        <option value="all">All</option>
+        <option value="completed">Completed</option>
+        <option value="uncompleted">Uncompleted</option>
+      </select>
     </div>
+  </form>
+  <div class="todo-container">
+    <ul class="todo-list"></ul>
+  </div>
 
-    <script src="./app.js">
-    
-    </script>
-  </body>
+  <script src="./app.js">
+
+  </script>
+</body>
+
 </html>
